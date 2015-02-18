@@ -34,7 +34,7 @@ io.on('connection' function (sock) {
     sock.emit('get name');
   };
   sock.on('set nama', function (name) {
-    sock.handhsake.session.name = name;
+    sock.handshake.session.name = name;
     sock.handshake.session.save();
   });
 });
